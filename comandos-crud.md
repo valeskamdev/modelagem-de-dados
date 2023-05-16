@@ -76,3 +76,17 @@ SELECT COUNT(id) FROM produtos;
 -- Usando AS para definir um apelido para a coluna de resultados
 SELECT COUNT(id) AS quantidade FROM produtos;
 ```
+## UPDATE (💀 SEMPRE COM WHERE!! 💀)
+
+```sql
+UPDATE fabricantes SET nome = 'Asus do Brasil' WHERE id = 2;
+
+-- Exercício 1: na tabela de produtos, atualize o produto 'Geladeira'
+-- mudando o fabricante de 'Brastemp' para 'Samsung'
+UPDATE produtos SET fabricante_id = 6 WHERE id = 4;
+
+-- Exercício 2: na tabela de produtos, referente ao produto 'Xbox 123',
+-- mude o nome para 'Xbox One' e a descrição para 'Novo lançamento com parcelamento em 256x'
+UPDATE produtos SET nome = 'Xbox One', descricao = 'Novo lançamento com parcelamento em 256x' 
+WHERE id = 5;
+```
