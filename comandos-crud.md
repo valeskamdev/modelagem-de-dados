@@ -90,3 +90,9 @@ UPDATE produtos SET fabricante_id = 6 WHERE id = 4;
 UPDATE produtos SET nome = 'Xbox One', descricao = 'Novo lançamento com parcelamento em 256x' 
 WHERE id = 5;
 ```
+## DELETE (💀👿 SEMPRE COM WHERE!! 👿💀)
+
+```sql
+DELETE FROM produtos WHERE id = 3;
+DELETE FROM fabricantes WHERE id = 1;
+```
